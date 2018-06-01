@@ -1,0 +1,13 @@
+<div class="weather" *ngFor="let weather of conditions">
+  <div class="title"><a [href]="weather.data.link" target="_blank"><img [src]="weather.data.icon"> {{weather.name}}</a></div>
+  <table>
+    <tr>
+      <td>Temperature</td>
+      <td class="padding">{{weather.data.temp}}</td>
+    </tr>
+    <tr>
+      <td>Text</td>
+      <td class="padding">{{weather.data.text}}</td>
+    </tr>
+  </table>
+</div>
